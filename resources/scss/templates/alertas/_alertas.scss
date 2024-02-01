@@ -1,0 +1,80 @@
+@use '../../base/variables' as v;
+
+.alert {
+
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: v.$bold;
+
+    &__error {
+        background-color: lighten(v.$rojo, 60%);
+        border-left: .5rem solid v.$rojo;
+        color: v.$rojo;
+    }
+
+    &-success {
+        background-color: lighten(v.$verde, 40%);
+        border-left: .5rem solid v.$verde;
+        color: darken(v.$verde, 20);
+    }
+}
+/* Agrega estos estilos al final de tu archivo de estilos CSS */
+.error-message {
+    list-style: none;
+    color: #ffffff; /* Texto en color blanco */
+    background-color: #ff6666; /* Fondo rojo suave */
+    font-size: 1rem; /* Tamaño de fuente base */
+    margin-top: 0.5rem; /* Espacio superior para separar del campo anterior */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    border-radius: 1.2rem; /* Esquinas redondeadas en la parte derecha */
+    position: relative;
+    border: 1px solid #ffffff; /* Delineado del color del fondo */
+
+}
+
+/* Ajusta la posición y el tamaño del segmento de rojo fuerte al costado izquierdo */
+.error-message::before {
+    list-style: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.3rem; /* Ajusta la posición hacia la izquierda */
+    width: 2rem; /* Ancho del segmento */
+    height: 100%; /* Ajusta la altura para llegar al fondo */
+    background-color: #ff0000; /* Rojo fuerte */
+    border: 1px solid #ffffff; /* Delineado del color del fondo */
+    border-radius:1.2rem 0 0 1.2rem; /* Esquinas redondeadas solo en la parte derecha */
+}
+
+/* Agrega estos estilos al final de tu archivo de estilos CSS */
+.success-message {
+    list-style: none;
+    color: #000000; /* Texto en color blanco */
+    background-color: lighten(v.$verde, 40%);
+    font-size: 1rem; /* Tamaño de fuente base */
+    margin-top: 0.5rem; /* Espacio superior para separar del campo anterior */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    border-radius: 1.2rem; /* Esquinas redondeadas en la parte derecha */
+    position: relative;
+    border: 1px solid #ffffff; /* Delineado del color del fondo */
+}
+
+/* Ajusta la posición y el tamaño del segmento de rojo fuerte al costado izquierdo */
+.success-message::before {
+    list-style: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.3rem; /* Ajusta la posición hacia la izquierda */
+    width: 2rem; /* Ancho del segmento */
+    height: 100%; /* Ajusta la altura para llegar al fondo */
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffffff; /* Delineado del color del fondo */
+    border-radius:1.2rem 0 0 1.2rem; /* Esquinas redondeadas solo en la parte derecha */
+}

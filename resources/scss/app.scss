@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'base/index';
+// Variables
+@import 'ui/index';
+
+@import 'templates/index';
+
+@import 'form/index';
+
+@import 'auth/index';
+
+@import 'dashboard/index';

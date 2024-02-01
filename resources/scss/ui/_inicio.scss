@@ -1,0 +1,53 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+
+/* Estilos de la sección de catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.catalogo .item {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #0a0d25;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: lighten($color: #0a0d25, $amount: 5);
+    }
+}
+
+.catalogo img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.catalogo h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.catalogo p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-contact{
+    display: flex;
+    margin: 2rem 0;
+    i{
+        margin: 1rem;
+    }
+    span{
+        font-weight: bold;
+    }
+}

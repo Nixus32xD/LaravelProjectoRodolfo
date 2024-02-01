@@ -1,0 +1,60 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.form {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 32px 48px;
+    background-color: #333;
+    border-radius: 1rem;
+    h1{
+        text-align: center;
+        margin-top: 0;
+    }
+}
+.contact-form{
+    margin-top: 2rem;
+}
+
+.form input[type="file"] {
+    display: none;
+    /* Ocultar el input de tipo file */
+}
+
+.form label[for="file-input-image"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #555;
+    color: #fff;
+    background-color: #444;
+    font-family: Arial, sans-serif;
+    /* Cambiar el estilo de letra */
+    text-align: center;
+    /* Centrar el texto */
+    cursor: pointer;
+
+}
+ /* Cambiar el cursor al pasar por encima */
+.form label[for="file-input-image"]:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #0069d9;
+    color: #fff;
+  }

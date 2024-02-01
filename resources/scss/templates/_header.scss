@@ -1,0 +1,75 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #1A1B22, #00051F, #1A1B22);
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    @include m.contenedor;
+}
+
+/* Estilos del navbar */
+.navbar {
+    background-color: #21252B;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+
+    // z-index: 1;
+    &__title {
+        font-family: v.$titulo-principal;
+        font-size: v.$regular;
+        text-transform: uppercase;
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &__toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+    }
+}
+
+/* Estilos del logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #007AFF;
+}
